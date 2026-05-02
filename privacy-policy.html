@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Politique de confidentialité — Fiduo</title>
+    <style>
+        :root {
+            --bg: #FAFAF7;
+            --surface: #FFFFFF;
+            --text: #1A1A1A;
+            --text-secondary: #5A5A5A;
+            --border: #E5E5E0;
+            --accent: #208AEF;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1A1A1A;
+                --surface: #232323;
+                --text: #F5F5F0;
+                --text-secondary: #A8A8A0;
+                --border: #353535;
+                --accent: #5BA8FF;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 32px 24px 80px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 8px;
+            color: var(--text);
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 40px 0 12px;
+            color: var(--text);
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin: 24px 0 8px;
+            color: var(--text);
+        }
+
+        p {
+            margin: 0 0 14px;
+            color: var(--text);
+        }
+
+        .meta {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 8px 0 16px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        th {
+            background: var(--bg);
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-secondary);
+        }
+
+        strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 32px 0;
+        }
+
+        .yes { color: #2A7F4F; font-weight: 600; }
+        .no { color: #B83A3A; font-weight: 600; }
+
+        @media (max-width: 480px) {
+            body { font-size: 15px; }
+            main { padding: 24px 16px 60px; }
+            h1 { font-size: 24px; }
+            h2 { font-size: 18px; }
+            table { font-size: 13px; }
+            th, td { padding: 8px 10px; }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <h1>Politique de confidentialité — Fiduo</h1>
+        <p class="meta">Dernière mise à jour : 1<sup>er</sup> mai 2026</p>
+    </header>
+
+    <p>
+        Fiduo est une application mobile éditée par <strong>Resolunet</strong>
+        (ci-après « nous », « notre » ou « l'éditeur »).
+    </p>
+    <p>
+        Cette politique décrit comment Fiduo traite — ou plutôt
+        <strong>ne traite pas</strong> — vos données personnelles.
+    </p>
+
+    <h2>1. Principe fondamental : aucune donnée ne quitte votre appareil</h2>
+    <p>
+        Fiduo est conçue comme une application <strong>100 % locale</strong>.
+        Toutes les informations que vous saisissez (dépenses, charges récurrentes, dettes, catégories,
+        paramètres, seuil d'alerte, thème) sont stockées <strong>exclusivement sur votre appareil</strong>,
+        dans une base de données chiffrée locale (SQLCipher, AES-256).
+    </p>
+    <p>Concrètement :</p>
+    <ul>
+        <li><strong>Aucun compte utilisateur</strong> n'est créé.</li>
+        <li><strong>Aucune connexion réseau</strong> n'est établie par l'application pour transmettre vos données.</li>
+        <li><strong>Aucun serveur</strong> ne reçoit, ne stocke, ni ne traite vos données financières.</li>
+        <li><strong>Aucun tiers</strong> (analytics, publicité, sociétés affiliées) n'a accès à vos saisies.</li>
+    </ul>
+
+    <h2>2. Données collectées par Fiduo</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Catégorie</th>
+            <th>Collectée par Fiduo ?</th>
+            <th>Quitte l'appareil ?</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Dépenses, montants, dates, notes</td>
+            <td><span class="yes">Oui (local)</span></td>
+            <td><span class="no">Non</span></td>
+        </tr>
+        <tr>
+            <td>Catégories, charges récurrentes, dettes</td>
+            <td><span class="yes">Oui (local)</span></td>
+            <td><span class="no">Non</span></td>
+        </tr>
+        <tr>
+            <td>Paramètres (thème, seuil d'alerte)</td>
+            <td><span class="yes">Oui (local)</span></td>
+            <td><span class="no">Non</span></td>
+        </tr>
+        <tr>
+            <td>Identifiants, mots de passe</td>
+            <td><span class="no">Non</span></td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>Adresse e-mail, nom, téléphone</td>
+            <td><span class="no">Non</span></td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>Localisation, contacts, photos</td>
+            <td><span class="no">Non</span></td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>Identifiant publicitaire (IDFA / Android Ad ID)</td>
+            <td><span class="no">Non</span></td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>Données d'usage / analytics</td>
+            <td><span class="no">Non</span></td>
+            <td>—</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Données collectées par Apple ou Google (hors de notre contrôle)</h2>
+    <p>
+        Lorsque vous installez Fiduo via l'<strong>App Store</strong> (Apple) ou le
+        <strong>Google Play Store</strong>, ces plateformes peuvent collecter,
+        indépendamment de l'éditeur :
+    </p>
+    <ul>
+        <li>Des <strong>données de crash et de performance</strong> (si vous avez accepté de les partager
+            avec les développeurs dans les paramètres de votre appareil).
+        </li>
+        <li>Des <strong>statistiques d'installation et d'engagement</strong> anonymisées et agrégées,
+            selon leurs propres politiques de confidentialité.
+        </li>
+    </ul>
+    <p>Ces données sont régies par :</p>
+    <ul>
+        <li><a href="https://www.apple.com/fr/legal/privacy/fr-ww/" target="_blank" rel="noopener noreferrer">Politique de confidentialité d'Apple</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Politique de confidentialité de Google</a></li>
+    </ul>
+    <p>
+        Resolunet ne contrôle ni ne reçoit ces données dans une forme identifiant un utilisateur individuel.
+    </p>
+
+    <h2>4. Suppression des données</h2>
+    <p>
+        Vos données sont stockées localement. Vous pouvez les supprimer à tout moment, de deux manières :
+    </p>
+    <ul>
+        <li>
+            <strong>Réinitialisation depuis Fiduo</strong> : Paramètres → Données →
+            « Réinitialiser les données ». Cette action efface toutes vos dépenses, charges récurrentes,
+            dettes et remboursements. Les catégories et paramètres sont conservés.
+        </li>
+        <li>
+            <strong>Désinstallation de l'application</strong> : supprime l'intégralité de la base de données
+            locale, y compris les catégories et paramètres.
+        </li>
+    </ul>
+    <p>
+        Aucune action de notre part n'est requise puisqu'aucune copie n'existe en dehors de votre appareil.
+    </p>
+
+    <h2>5. Sécurité</h2>
+    <p>
+        Les données sont chiffrées au repos sur votre appareil via <strong>SQLCipher (AES-256)</strong>.
+        La sécurité physique de l'appareil (verrouillage par code, biométrie, chiffrement système) reste
+        sous votre responsabilité.
+    </p>
+    <p>
+        Si votre appareil est perdu ou volé, vos données restent protégées par le chiffrement local mais
+        peuvent être accessibles à toute personne disposant d'un accès physique non protégé à votre appareil.
+    </p>
+
+    <h2>6. Sauvegarde</h2>
+    <p>
+        Fiduo n'effectue <strong>aucune sauvegarde automatique</strong> dans le cloud à ce stade.
+        Si vous changez d'appareil ou désinstallez l'application sans précaution,
+        <strong>vos données seront définitivement perdues</strong>.
+    </p>
+    <p>
+        Une fonctionnalité de sauvegarde et de restauration est prévue dans une future version.
+    </p>
+
+    <h2>7. Vos droits (RGPD)</h2>
+    <p>
+        Bien que Fiduo ne nous transmette aucune donnée vous concernant, le
+        <strong>Règlement Général sur la Protection des Données</strong> (UE 2016/679) vous garantit les
+        droits suivants :
+    </p>
+    <ul>
+        <li>Droit d'accès, de rectification, d'effacement</li>
+        <li>Droit à la limitation et à l'opposition au traitement</li>
+        <li>Droit à la portabilité</li>
+    </ul>
+    <p>
+        Ces droits s'exercent <strong>directement dans l'application</strong> : vos données sont sous votre
+        contrôle exclusif sur votre appareil. Aucune demande RGPD adressée à Resolunet ne pourrait être
+        satisfaite, faute de données à traiter de notre côté.
+    </p>
+
+    <h2>8. Modifications de cette politique</h2>
+    <p>
+        Cette politique peut être mise à jour pour refléter les évolutions de Fiduo
+        (par exemple, l'ajout d'une fonctionnalité de sauvegarde cloud ou de notifications push).
+        Toute modification matérielle sera notifiée dans l'application avant sa mise en œuvre.
+    </p>
+
+    <h2>9. Contact</h2>
+    <p>
+        Pour toute question relative à cette politique :
+    </p>
+    <p>
+        <strong>Resolunet</strong><br>
+        <a href="mailto:contact.resolunet@gmail.com">contact.resolunet@gmail.com</a>
+    </p>
+
+    <hr>
+    <p class="meta">
+        Cette politique est rédigée en français. Une traduction anglaise sera mise à disposition pour la
+        soumission internationale au App Store.
+    </p>
+</main>
+</body>
+</html>
